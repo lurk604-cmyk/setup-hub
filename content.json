@@ -1,7 +1,12 @@
 {
- "version": 4,
- "updatedAt": 1794486371154,
+ "version": 5,
+ "updatedAt": 1794486928591,
  "changelog": [
+  {
+   "v": 5,
+   "at": 1794486928591,
+   "note": "New app icon"
+  },
   {
    "v": 4,
    "at": 1794486371154,
@@ -600,5 +605,5 @@
    ]
   }
  ],
- "appVersion": "1.0.23"
+ "appVersion": "1.0.24"
 }
