@@ -1,7 +1,12 @@
 {
- "version": 2,
- "updatedAt": 1794485716334,
+ "version": 3,
+ "updatedAt": 1794485911286,
  "changelog": [
+  {
+   "v": 3,
+   "at": 1794485911286,
+   "note": "Setup Hub now updates itself"
+  },
   {
    "v": 2,
    "at": 1794485716334,
@@ -590,5 +595,5 @@
    ]
   }
  ],
- "appVersion": "1.0.21"
+ "appVersion": "1.0.22"
 }
