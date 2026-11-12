@@ -1,0 +1,594 @@
+{
+ "version": 2,
+ "updatedAt": 1794485716334,
+ "changelog": [
+  {
+   "v": 2,
+   "at": 1794485716334,
+   "note": "Content updated"
+  },
+  {
+   "v": 1,
+   "at": 1794366000000,
+   "note": "First version of the app is live."
+  }
+ ],
+ "settings": {
+  "appName": "Setup Hub",
+  "tagline": "Setup & support",
+  "logo": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwcj43rq-eq5ip.jpg",
+  "navLabel": "Sections",
+  "bg": "#000000",
+  "surface": "#15131b",
+  "text": "#ecebf3",
+  "accent": "#fafafa",
+  "font": "modern",
+  "bgStyle": "plain",
+  "radius": "14",
+  "discord": {
+   "invite": "https://discord.gg/gngGwwR4M7",
+   "serverId": "1554422434407514112",
+   "clientId": "1570166109624082675",
+   "gate": "member"
+  }
+ },
+ "home": {
+  "eyebrow": "Welcome",
+  "title": "Get set up without the guesswork",
+  "image": "",
+  "body": "Start with **Requirements**, then follow the **Setup guide** step by step. Stuck on an error? Search the code in **Error fixes**.\n\nThis app updates itself. When something changes you will see it here, no reinstall needed."
+ },
+ "tabs": [
+  {
+   "id": "requirements",
+   "name": "Requirements",
+   "icon": "check",
+   "color": "",
+   "image": "",
+   "description": "Check all of this before you install anything.",
+   "blocks": [
+    {
+     "id": "b1",
+     "type": "specs",
+     "title": "System requirements",
+     "sub": "Your PC needs at least the minimum column. The recommended column runs best.",
+     "colA": "Minimum",
+     "colB": "Recommended",
+     "rows": [
+      {
+       "name": "Windows",
+       "a": "Windows 10 64-bit",
+       "b": "Windows 11"
+      },
+      {
+       "name": "Processor",
+       "a": "4 cores",
+       "b": "6 cores or more"
+      },
+      {
+       "name": "Memory",
+       "a": "8 GB RAM",
+       "b": "16 GB RAM"
+      },
+      {
+       "name": "Graphics",
+       "a": "RTX 2080",
+       "b": "RTX 3070"
+      },
+      {
+       "name": "Storage",
+       "a": "10 GB free (SSD)",
+       "b": "20 GB free (NVMe SSD)"
+      },
+      {
+       "name": "Internet",
+       "a": "Stable connection",
+       "b": "Wired connection"
+      }
+     ]
+    },
+    {
+     "id": "b2",
+     "type": "checklist",
+     "title": "Before you start",
+     "items": [
+      {
+       "label": "Capture Card",
+       "detail": "Elgato 4k X, Elgato 4k S, Elgato HD60 X, Elgato 4k Pro",
+       "level": "Required"
+      },
+      {
+       "label": "Pc Requirements ",
+       "detail": "",
+       "level": "Required"
+      },
+      {
+       "label": "Connection Method ",
+       "detail": "Remote Play (Free), Titan 2, Makcu",
+       "level": "Required"
+      },
+      {
+       "label": "USB to Ethernet Adapter",
+       "detail": "Only needed for 2k Vision ",
+       "level": "Optional"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "name": "Setup guide",
+   "icon": "wrench",
+   "color": "",
+   "image": "",
+   "description": "Step by step, start to finish. Takes about 10 minutes.",
+   "blocks": [
+    {
+     "id": "b4",
+     "type": "steps",
+     "title": "Helios Setup",
+     "intro": "Do these in order. Don't skip ahead.",
+     "steps": [
+      {
+       "title": "Download the latest files",
+       "body": "Go to Input Sense and find the Resources Channel \n\n- Click Get the latest Helios version here \n- Make sure to Extract All",
+       "image": "",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd8jcm3-b12qz.png"
+       ]
+      },
+      {
+       "title": "Once you open Helios ",
+       "body": "Tools > Preferences > Account > Make sure you sign into your Discord account you'll be buying the Subscription on. ",
+       "image": ""
+      },
+      {
+       "title": "Capture Card",
+       "body": "Look at the Pictures Below to setup your Capture Card \n\n(Head over to [How to Fix Meter Not Reading](#go/errors/b8/e%3AMeter%20Not%20Reading) for the Console Settings you'll need to put on before plugging in your Capture Card",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd9hs8z-9zktu.gif"
+       ],
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "title": "Remote Play ",
+       "body": "Watch the video below on how to setup Remote Play",
+       "image": "",
+       "videoLink": "https://youtu.be/Ulom2HNZuSQ"
+      },
+      {
+       "title": "Titan Setup ",
+       "body": "Look at the Pictures Below to setup your Titan 2 ",
+       "image": "",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd8tbef-ohvd4.gif",
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd94m2c-l41ng.gif"
+       ]
+      },
+      {
+       "title": "Makcu",
+       "body": "Look at the Pictures Below to setup your Makcu",
+       "image": "",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd9e4s2-0geof.gif",
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd9echq-11jqw.gif"
+       ]
+      },
+      {
+       "title": "Python",
+       "body": "Once you setup your Remote Play, Titan or Makcu now you'll need to install InputSense-CUDA. \n\nGo to Online Resources and download Input Sense CUDA\n\n(Note it make take a few minutes to install and that is normal please be patient)",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd9ly6f-kn1wb.png"
+       ],
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "title": "Script ",
+       "body": "Depending on what game you want to play download the script that you want to use. \n\n(Note MLB and CFB have extra payments)\n- 2k Vision\n- Aim Engine \n- MLB Vision \n- CFB Vision ",
+       "images": [],
+       "video": "",
+       "videoLink": ""
+      }
+     ]
+    },
+    {
+     "id": "brv8bhqi",
+     "type": "steps",
+     "title": "2k Vision",
+     "intro": "Once you start 2k Vison ",
+     "steps": [
+      {
+       "title": "ID ",
+       "body": "do /get in any Channel in Input Sense and click Login ID to get your ID",
+       "image": ""
+      },
+      {
+       "title": "Meter",
+       "body": "Late - Go up \nEarly - Go down \n\n**Tempo**\nFast - Go down \nSlow - Go up ",
+       "images": [],
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "title": "Skele ",
+       "body": "**Requirements For Skele**\n- Nvidia Gpu 3050 or better \n\n- Online Resources > Download Skele \n- Tools > Engine Builder > Click Skele > Click Build > If you have a high end Gpu build it on FP32 if not do FP16 but we still recommend FP16 since Skele is a big weight. \n\nOn 2k Vision if think your Skele isn't working click *Model* on the right side and select Skele\n\n(Note AMD can be supported but don't except amazing results)",
+       "images": [],
+       "video": "",
+       "videoLink": ""
+      }
+     ]
+    },
+    {
+     "id": "b1qsacp7",
+     "type": "steps",
+     "title": "Aim Engine ",
+     "intro": "Once you start Aim Engine",
+     "steps": [
+      {
+       "title": "Weights ",
+       "body": "You'll need to buy a Weight from a creator to be able to use Aim Engine, Head over to[Weights](#go/community) and Join a server to buy a Weight\n\n(If you don't want to buy a Weight in Online Resources search the game you want to play and see if there's any free Weights)",
+       "image": ""
+      },
+      {
+       "title": "Building Weights ",
+       "body": "Once you bought a Weight do this \n- Tools > Engine Builder > Click The Weight > Click Build > Build it on FP32",
+       "images": [],
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "title": "Settings ",
+       "body": "If you need your settings done please contact ",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwdanvw1-oz0dt.png",
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwdao0gb-r8ty2.png",
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwdao4i1-b8zt8.png"
+       ],
+       "video": "",
+       "videoLink": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "errors",
+   "name": "Error Code/Fixes",
+   "icon": "alert",
+   "color": "",
+   "image": "",
+   "description": "Most Error Codes have the same fix so if you don't see your Error Code on here try the most common fix ",
+   "blocks": [
+    {
+     "id": "b8",
+     "type": "errors",
+     "title": "Error codes/Fixes",
+     "items": [
+      {
+       "code": "CVPY-0032",
+       "title": "CV Python Error",
+       "severity": "low",
+       "cause": "Fixes For Error Code",
+       "fix": "Delete Bin Folder\nReinstall InputSense-CUDA From Online Resources \nOnly if the First And Second fix don't work try this (Video Below)",
+       "video": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd79fep-38fnr.mov"
+      },
+      {
+       "code": "Remote Play",
+       "title": "Remote Play doesn't seem to connect try this",
+       "severity": "medium",
+       "cause": "Connection Issues, USB to Ethernet Adapter has gone bad. ",
+       "fix": "Turn off ur playstation\nStop ur connection sharing on pc\nTurn ps on\nReshare connection\nGo to console settings and unconnect and reconnect to ethernet\nStart remote play again"
+      },
+      {
+       "code": "Meter Not Reading",
+       "title": "How to Fix Meter Not Reading",
+       "severity": "low",
+       "cause": "Console settings, Capture Card settings, Wrong Format ",
+       "fix": "**PlayStation**\n\n- HDCP OFF\n- Resolution 1080p\n- HDR OFF\n- ALLM OFF\n- VRR OFF\n- Deep Color Range OFF\n- RGB Range Full\n\n**Xbox**\n\n- Resolution 1080p\n- 24 Bit\n- PC RGB Color Range \n- Video Modes ALL OFF\n- Night Mode OFF\n- High Contrast Mode OFF\n- Color Blindness Filter OFF\n"
+      },
+      {
+       "code": "CVPY-0033",
+       "title": "How to Fix CVPY-0033",
+       "severity": "medium",
+       "cause": "",
+       "fix": "Delete Bin \nReinstall the script you got this Error Code on \n \n"
+      },
+      {
+       "code": "CVPY-0032",
+       "title": "How to Fix CVPY-0032",
+       "severity": "low",
+       "cause": "Anti Virus, Windows Update ",
+       "fix": "Read the full Error Code if you see (An Application Control policy has blocked this file.) do this \n\n- Disable Anti Virus \n- Disable Smart App Control"
+      },
+      {
+       "code": "Engine Builder Error",
+       "title": "0xC0000005",
+       "severity": "medium",
+       "cause": "Not fulling installing InputSense-CUDA",
+       "fix": "Go to Online Resources and Reinstall InputSense-CUDA",
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "code": "Plugin Error",
+       "title": "A plugin could not be loaded ",
+       "severity": "low",
+       "cause": "",
+       "fix": "- Disable Smart App Control \n- Disable Window Defender ",
+       "video": "",
+       "videoLink": ""
+      },
+      {
+       "code": "CVPY-0012",
+       "title": "How to Fix Error Code",
+       "severity": "low",
+       "cause": "",
+       "fix": "- Restart Helios",
+       "video": "",
+       "videoLink": ""
+      }
+     ]
+    },
+    {
+     "id": "b9",
+     "type": "callout",
+     "style": "info",
+     "title": "Error not listed?",
+     "body": "Send me a screenshot of the full message in the Discord and I'll add the fix here."
+    }
+   ]
+  },
+  {
+   "id": "community",
+   "name": "Weights",
+   "icon": "discord",
+   "color": "",
+   "image": "",
+   "description": "Get help, see announcements and hang out.",
+   "blocks": [
+    {
+     "id": "bpm43jeh",
+     "type": "directory",
+     "title": "Resources",
+     "sub": "Find your game. Meet your creator. Join their community.",
+     "items": [
+      {
+       "name": "Suns Server",
+       "featured": "no",
+       "image": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd3jx04-8akfv.webp",
+       "invite": "https://discord.gg/eNTQt5JJCW",
+       "description": "",
+       "added": 1794459491753,
+       "games": [
+        "bstuwaiy",
+        "b5q4ixp4",
+        "b91ysejd",
+        "b6uyqv4u",
+        "bxkpex8y",
+        "bsk4bukd",
+        "b4u0dyn8",
+        "bunqi7aq",
+        "b3ldxwli",
+        "byzmd9qs",
+        "bodyl76w",
+        "buhfl24y",
+        "bq52fqti"
+       ]
+      },
+      {
+       "name": "swt",
+       "featured": "no",
+       "image": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd4r3mu-rkhwm.webp",
+       "invite": "https://discord.gg/tJD3NtAVG7",
+       "games": [
+        "bstuwaiy",
+        "b5q4ixp4",
+        "bsk4bukd",
+        "b91ysejd",
+        "bxkpex8y"
+       ],
+       "description": "",
+       "added": 1794462734798
+      },
+      {
+       "name": "Taher",
+       "featured": "no",
+       "image": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd4snso-2x4wj.webp",
+       "invite": "https://discord.gg/RQn2YwPJah",
+       "games": [
+        "bstuwaiy",
+        "b5q4ixp4",
+        "b91ysejd",
+        "b6uyqv4u",
+        "blppq4zj"
+       ],
+       "description": "",
+       "added": 1794462847394
+      },
+      {
+       "name": "Smokey",
+       "featured": "no",
+       "image": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd4veh9-bfroe.png",
+       "invite": "https://discord.gg/fEVP9raNnx",
+       "games": [
+        "ba4x11iy"
+       ],
+       "description": "",
+       "added": 1794462847394
+      },
+      {
+       "name": "Drex",
+       "featured": "no",
+       "image": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwd501xx-jjq5u.png",
+       "invite": "https://discord.gg/9pTBwm2fRd",
+       "games": [
+        "bstuwaiy",
+        "byzmd9qs",
+        "bsk4bukd",
+        "bxkpex8y"
+       ],
+       "description": "",
+       "added": 1794462847394
+      }
+     ],
+     "games": [
+      {
+       "id": "bstuwaiy",
+       "name": "MW4",
+       "color": "#e23936"
+      },
+      {
+       "id": "b5q4ixp4",
+       "name": "BO7",
+       "color": "#36e2d4"
+      },
+      {
+       "id": "b91ysejd",
+       "name": "Warzone",
+       "color": "#7be236"
+      },
+      {
+       "id": "b6uyqv4u",
+       "name": "Apex",
+       "color": "#36b2e2"
+      },
+      {
+       "id": "bxkpex8y",
+       "name": "Valorant",
+       "color": "#e27b36"
+      },
+      {
+       "id": "bsk4bukd",
+       "name": "Rainbow Six Siege",
+       "color": "#6366f1"
+      },
+      {
+       "id": "b4u0dyn8",
+       "name": "Battle Field",
+       "color": "#d946ef"
+      },
+      {
+       "id": "bunqi7aq",
+       "name": "Arc Raiders",
+       "color": "#22c55e"
+      },
+      {
+       "id": "b3ldxwli",
+       "name": "Marvel Rivals",
+       "color": "#8b5cf6"
+      },
+      {
+       "id": "byzmd9qs",
+       "name": "BO2 ",
+       "color": "#1c451c"
+      },
+      {
+       "id": "bodyl76w",
+       "name": "PUBG",
+       "color": "#df84e6"
+      },
+      {
+       "id": "buhfl24y",
+       "name": "Halo",
+       "color": "#570000"
+      },
+      {
+       "id": "bq52fqti",
+       "name": "OverWatch",
+       "color": "#ffe95c"
+      },
+      {
+       "id": "ba4x11iy",
+       "name": "Fortnite",
+       "color": "#f5f5f5"
+      },
+      {
+       "id": "blppq4zj",
+       "name": "Empulse  ",
+       "color": "#ff5c7c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tab-tqnfk",
+   "name": "Creative Scripts ",
+   "icon": "download",
+   "color": "",
+   "image": "",
+   "description": "",
+   "blocks": [
+    {
+     "id": "bwz498w9",
+     "type": "links",
+     "title": "Download Creative Scripts ",
+     "items": [
+      {
+       "label": "Lurks Plate Drop ",
+       "url": "",
+       "note": "",
+       "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwdbb04l-h1ora-Lurks-Plate-Drop-5.13.zip",
+       "fileName": "Lurks Plate Drop 5.13.zip",
+       "fileSize": 331709
+      },
+      {
+       "label": "Lurks AI Defense ",
+       "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwdbbjho-yy9bl-Lurks_AI_Defense.zip",
+       "fileName": "Lurks_AI_Defense.zip",
+       "fileSize": 20821418,
+       "url": "",
+       "note": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tab-4u7ue",
+   "name": "Other",
+   "icon": "globe",
+   "color": "",
+   "image": "",
+   "description": "",
+   "blocks": [
+    {
+     "id": "bcsc9l08",
+     "type": "steps",
+     "title": "Ethernet to USB Adapter ",
+     "intro": "",
+     "steps": [
+      {
+       "title": "How to Setup Adapter ",
+       "body": "Make sure you purchase a USB Type-A Adapter. \n\nOnce you setup the adapter you'll need to turn it on. \n\nHead over to [Lurks Sharing Tool](#go/sharing)",
+       "image": "",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwdfgtxx-1jymw.png"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "bg05m8eq",
+     "type": "steps",
+     "title": "Dual Capture Card",
+     "intro": "",
+     "steps": [
+      {
+       "title": "How to Setup Dual Capture Cards",
+       "body": "This is meant for streaming and sharing your screen on discord without Helios showing up ",
+       "image": "",
+       "images": [
+        "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/media/mwdgvok7-dh5vk.png"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "appVersion": "1.0.21"
+}
