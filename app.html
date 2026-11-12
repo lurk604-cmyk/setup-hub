@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-hub-ui="19">
+<html lang="en" data-hub-ui="20">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1820,6 +1820,9 @@ document.addEventListener('click', function(e){
   var a=el.dataset.act, t, b, i;
   if(a==='m-backdrop'){ if(e.target===el) closeModal(true); return; }
   if(a==='m-close'){ closeModal(true); return; }
+  if(a==='app-restart'){ toast('Restarting to update\u2026'); HUB.appUpdate.restart(); return; }
+  if(a==='app-later'){ auDismissed=true; render(); return; }
+  if(a==='app-get'){ HUB.open(APP_LATEST_URL); toast('Downloading the new version. Open it when it finishes.'); return; }
   if(a==='m-ok'){ var mo=M; closeModal(false); mo.onOk&&mo.onOk(); return; }
   if(a==='m-save'){ var ms=M; closeModal(false); ms.onSave(ms.obj); return; }
   if(a==='m-delete'){ var md=M; closeModal(false); md.onDelete(); return; }
@@ -1875,9 +1878,6 @@ document.addEventListener('click', function(e){
   if(a==='discord-settings'){ openDiscordSettings(); return; }
   if(a==='publish'){ openPublish(); return; }
   if(a==='do-publish'){ doPublish(); return; }
-  if(a==='app-restart'){ HUB.appUpdate.restart(); return; }
-  if(a==='app-later'){ auDismissed=true; render(); return; }
-  if(a==='app-get'){ HUB.open(APP_LATEST_URL); toast('Downloading the new version. Open it when it finishes.'); return; }
   if(a==='discard'){ askConfirm('Throw away every change since the last publish?','Discard changes').then(function(ok){ if(ok){ undoStack.push(JSON.stringify(draft)); saveUndo(); draft=clone(live); lastSnap=JSON.stringify(draft); lsDel('hub-draft'); render(); toast('Changes discarded. Click Undo to get them back.'); } }); return; }
   if(a==='edit-home'){ openForm({title:'Edit welcome', obj:clone(draft.home||{}), fields:HOME_FIELDS, onSave:function(o){ draft.home=o; commit(); }}); return; }
   if(a==='add-tab'){ newTab(); return; }
