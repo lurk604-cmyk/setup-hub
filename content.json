@@ -1,7 +1,12 @@
 {
- "version": 3,
- "updatedAt": 1794485911286,
+ "version": 4,
+ "updatedAt": 1794486371154,
  "changelog": [
+  {
+   "v": 4,
+   "at": 1794486371154,
+   "note": "Fixed the Restart to update button"
+  },
   {
    "v": 3,
    "at": 1794485911286,
@@ -595,5 +600,5 @@
    ]
   }
  ],
- "appVersion": "1.0.22"
+ "appVersion": "1.0.23"
 }
