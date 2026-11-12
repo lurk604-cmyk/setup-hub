@@ -1,7 +1,12 @@
 {
- "version": 5,
- "updatedAt": 1794486928591,
+ "version": 6,
+ "updatedAt": 1794487638448,
  "changelog": [
+  {
+   "v": 6,
+   "at": 1794487638448,
+   "note": "Faster updates"
+  },
   {
    "v": 5,
    "at": 1794486928591,
@@ -605,5 +610,5 @@
    ]
   }
  ],
- "appVersion": "1.0.24"
+ "appVersion": "1.0.25"
 }
