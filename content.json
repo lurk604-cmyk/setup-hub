@@ -1,7 +1,12 @@
 {
- "version": 6,
- "updatedAt": 1794487638448,
+ "version": 7,
+ "updatedAt": 1794544711938,
  "changelog": [
+  {
+   "v": 7,
+   "at": 1794544711938,
+   "note": "Content updated"
+  },
   {
    "v": 6,
    "at": 1794487638448,
@@ -557,9 +562,9 @@
       },
       {
        "label": "Lurks AI Defense ",
-       "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwdbbjho-yy9bl-Lurks_AI_Defense.zip",
-       "fileName": "Lurks_AI_Defense.zip",
-       "fileSize": 20821418,
+       "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwehklp1-vw209-Lurks_AI_Defense_share.zip",
+       "fileName": "Lurks_AI_Defense_share.zip",
+       "fileSize": 20860069,
        "url": "",
        "note": ""
       }
