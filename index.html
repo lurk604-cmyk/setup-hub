@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup Hub · Download</title>
+<meta name="description" content="Setup guides, error code fixes and tools from Lurk. Free download for Windows.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lurk">
+<meta property="og:title" content="Setup Hub">
+<meta property="og:description" content="Setup guides, error code fixes and tools from Lurk. Free download for Windows. Updates itself.">
+<meta property="og:url" content="https://lurk604-cmyk.github.io/setup-hub/">
+<meta property="og:image" content="https://lurk604-cmyk.github.io/setup-hub/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lurk604-cmyk.github.io/setup-hub/og.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+<style>
+  :root{--line:rgba(255,255,255,.12);--muted:#a3a3ad}
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:#000;color:#f4f4f6;font-family:Montserrat,system-ui,sans-serif}
+  body{min-height:100vh;display:grid;place-items:center;padding:40px 18px;position:relative;overflow-x:hidden}
+  /* starfield */
+  body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:radial-gradient(1px 1px at 12% 18%,#fff8,transparent 60%),radial-gradient(1px 1px at 78% 12%,#fffa,transparent 60%),radial-gradient(1.5px 1.5px at 64% 72%,#fff9,transparent 60%),radial-gradient(1px 1px at 30% 84%,#fff7,transparent 60%),radial-gradient(1px 1px at 90% 58%,#fff8,transparent 60%),radial-gradient(1.2px 1.2px at 46% 36%,#fff6,transparent 60%),radial-gradient(1px 1px at 6% 62%,#fff8,transparent 60%),radial-gradient(1px 1px at 56% 8%,#fff7,transparent 60%),radial-gradient(1.4px 1.4px at 22% 46%,#fff9,transparent 60%),radial-gradient(1px 1px at 84% 86%,#fff7,transparent 60%);
+    background-size:640px 640px}
+  body::after{background-size:420px 420px;opacity:.6;transform:rotate(17deg) scale(1.4)}
+  .glow{position:fixed;left:50%;top:38%;width:720px;height:720px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(255,255,255,.08),transparent);z-index:0;pointer-events:none}
+  main{position:relative;z-index:1;width:min(560px,100%);text-align:center}
+  .icon{width:132px;height:132px;border-radius:32px;display:block;margin:0 auto 26px;filter:drop-shadow(0 0 28px rgba(255,255,255,.18)) drop-shadow(0 18px 40px rgba(0,0,0,.8))}
+  h1{margin:0;font-size:clamp(40px,8vw,58px);font-weight:900;font-style:italic;letter-spacing:-.02em;line-height:1}
+  .tag{margin:12px 0 0;color:var(--muted);font-size:16px;font-weight:500;line-height:1.55}
+  .btns{display:flex;flex-direction:column;align-items:center;gap:12px;margin:34px 0 0}
+  .dl{display:inline-flex;align-items:center;gap:12px;height:60px;padding:0 30px;border-radius:16px;background:#fff;color:#000;text-decoration:none;font-weight:800;font-size:17px;box-shadow:0 0 0 1px #fff,0 10px 40px rgba(255,255,255,.18);transition:transform .15s,box-shadow .15s}
+  .dl:hover{transform:translateY(-2px);box-shadow:0 0 0 1px #fff,0 14px 48px rgba(255,255,255,.28)}
+  .dl svg{width:22px;height:22px}
+  .sub{color:var(--muted);font-size:13px;font-weight:500}
+  .dc{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 20px;border-radius:13px;border:1px solid var(--line);color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;background:rgba(255,255,255,.03);transition:background .15s,border-color .15s;margin-top:6px}
+  .dc:hover{background:#5865F2;border-color:#5865F2}
+  .dc svg{width:20px;height:20px}
+  .card{margin:40px 0 0;text-align:left;border:1px solid var(--line);border-radius:20px;padding:22px 22px 18px;background:rgba(18,18,22,.72);backdrop-filter:blur(8px)}
+  .card h2{margin:0 0 14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  ol{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:12px}
+  li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;font-size:14.5px;line-height:1.5;font-weight:500}
+  li::before{counter-increment:s;content:counter(s);width:28px;height:28px;border-radius:8px;display:grid;place-items:center;border:1px solid var(--line);font-weight:800;font-size:13px}
+  li b{font-weight:700}
+  .note{margin:16px 0 0;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.5}
+  .note b{color:#fff}
+  footer{margin:26px 0 0;color:#6b6b75;font-size:12px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<main>
+  <img class="icon" src="icon.png" alt="Setup Hub" width="132" height="132">
+  <h1>Setup Hub</h1>
+  <p class="tag">Setup guides, error code fixes and tools, all in one app.<br>It updates itself, so you only install it once.</p>
+  <div class="btns">
+    <a class="dl" href="https://github.com/lurk604-cmyk/setup-hub/releases/latest/download/Setup-Hub-Setup.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+      Download for Windows
+    </a>
+    <span class="sub">Windows 10 &amp; 11 · Free · Always the newest version</span>
+    <a class="dc" href="https://discord.gg/gngGwwR4M7" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18.2 18.2 0 0 0-5.6 0L8.6 3a19.5 19.5 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.8 19.8 0 0 0 6.1 21l1.3-2.1a12.8 12.8 0 0 1-2-1l.5-.4a14.1 14.1 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-2.9c.5-5.2-.8-9.7-3.6-13.7zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg>
+      Join the Discord
+    </a>
+  </div>
+  <section class="card">
+    <h2>How to install</h2>
+    <ol>
+      <li><span>Click <b>Download for Windows</b> and open the file when it finishes.</span></li>
+      <li><span>If Windows says <b>&ldquo;Windows protected your PC&rdquo;</b>, click <b>More info</b>, then <b>Run anyway</b>.</span></li>
+      <li><span>Setup Hub installs and opens by itself. Sign in with Discord and you&rsquo;re in.</span></li>
+    </ol>
+    <p class="note"><b>Already have it?</b> You don&rsquo;t need to download it again. Setup Hub updates itself and will show <b>Restart to update</b> when a new version is ready.</p>
+  </section>
+  <footer>Made by Lurk</footer>
+</main>
+</body>
+</html>
