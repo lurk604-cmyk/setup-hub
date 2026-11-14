@@ -1,7 +1,12 @@
 {
- "version": 7,
- "updatedAt": 1794544711938,
+ "version": 8,
+ "updatedAt": 1794634162712,
  "changelog": [
+  {
+   "v": 8,
+   "at": 1794634162712,
+   "note": "Content updated"
+  },
   {
    "v": 7,
    "at": 1794544711938,
@@ -565,6 +570,14 @@
        "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwehklp1-vw209-Lurks_AI_Defense_share.zip",
        "fileName": "Lurks_AI_Defense_share.zip",
        "fileSize": 20860069,
+       "url": "",
+       "note": ""
+      },
+      {
+       "label": "Lurks Got Next Spammer",
+       "file": "https://raw.githubusercontent.com/lurk604-cmyk/setup-hub/HEAD/files/mwfyu9bt-j37at-Lurks-Got-Next-Spammer.gpc",
+       "fileName": "Lurks Got Next Spammer.gpc",
+       "fileSize": 343,
        "url": "",
        "note": ""
       }
