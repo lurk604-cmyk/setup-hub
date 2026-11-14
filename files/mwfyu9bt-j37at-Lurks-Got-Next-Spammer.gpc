@@ -1,0 +1,15 @@
+#pragma METAINFO("Lurks Got Next Spammer", 1, 0, "Lurks")
+// Repeats Xbox A or PlayStation Cross while this memory slot is active.
+#define PRESS_MS 5
+#define RELEASE_MS 5
+
+main {
+    combo_run(RepeatAX);
+}
+
+combo RepeatAX {
+    set_val(BUTTON_16, 100.0);
+    wait(PRESS_MS);
+    set_val(BUTTON_16, 0.0);
+    wait(RELEASE_MS);
+}
